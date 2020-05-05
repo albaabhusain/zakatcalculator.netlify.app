@@ -2,11 +2,12 @@ var gold=document.getElementById('gold');
 var silver=document.getElementById('silver');
 var property=document.getElementById('property');
 var savings=document.getElementById('saving');
-var result=document.getElementById('result');
+var results=document.getElementById('result');
 var button=document.getElementById('submit');
 var myform=document.getElementById('my-form');
 var reset=document.getElementById('reset');
 var out=document.getElementById('pararesult');
+
 
 
 
@@ -21,8 +22,8 @@ var out=document.getElementById('pararesult');
     const totalzak=goldprice+silverprice+propertyprice+savingsprice;
 
   
-    result.value=totalzak;
-    out.innerText=totalzak;
+    results.value=totalzak;
+    out.innerHTML=totalzak +" Rs ";
     myform.reset();
 
  };
