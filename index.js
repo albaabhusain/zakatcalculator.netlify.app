@@ -29,7 +29,4 @@ var out=document.getElementById('pararesult');
  };
  
  button.addEventListener('click',totalzak,false);
-//  button.addEventListener('click',()=>{
-//      myform.reset();
-//  },false);
-  
+
