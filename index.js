@@ -54,12 +54,12 @@ fetch(api)
    console.log(goldprice);
    console.log(silverprice);
    console.log(totalzak);
-   goldc.innerHTML=goldpr;
-   silverc.innerHTML=silverpr;
-   goldp.innerHTML=goldprice;
-   silverp.innerHTML=silverprice;
-   propertyp.innerHTML=propertyprice;
-   savingp.innerHTML=savingsprice;
+   goldc.innerHTML=gol+"Rs";
+   silverc.innerHTML=sil+"Rs";
+   goldp.innerHTML=goldprice+"Rs";
+   silverp.innerHTML=silverprice+"Rs";
+   propertyp.innerHTML=propertyprice+"Rs";
+   savingp.innerHTML=savingsprice+"Rs";
     out.innerHTML=totalzak +" Rs ";
     myform.reset();
 
