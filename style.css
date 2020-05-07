@@ -77,11 +77,11 @@
      }
 
      .output-box{
-         font-size: 28px;
+         font-size: 22px;
          color: rgb(70, 117, 81);
 
          display: flex;
-         height: 18em;
+         height: 19em;
          width: 90%;
          margin: 30px 5%;
         background: #ECEC9D;
