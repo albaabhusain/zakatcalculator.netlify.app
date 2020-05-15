@@ -2,7 +2,7 @@ var gold=document.getElementById('gold');
 var silver=document.getElementById('silver');
 var property=document.getElementById('property');
 var savings=document.getElementById('saving');
-// var results=document.getElementById('result');
+var results=document.getElementById('resultt');
 var button1=document.getElementById('submit');
 var myform=document.getElementById('my-form');
 // var reset=document.getElementById('reset');
@@ -17,7 +17,7 @@ var gol;
 var sil;
 
 
-// const api=`https://metals-api.com/api/latest?access_key=c209h3jchq63sb0nrfk98e35o612g10pm75x5o46qz0ca6b9pgg708uol9gl&base=INR&symbols=XAU%2CXAG`;
+const api=`https://metals-api.com/api/latest?access_key=c209h3jchq63sb0nrfk98e35o612g10pm75x5o46qz0ca6b9pgg708uol9gl&base=INR&symbols=XAU%2CXAG`;
 
 fetch(api)
     .then(response =>{
@@ -50,13 +50,13 @@ fetch(api)
     const totalzak=goldprice+silverprice+propertyprice+savingsprice;
 
   
-   //  results.value=totalzak;
+    results.value=totalzak;
 
    console.log(goldprice);
    console.log(silverprice);
    console.log(totalzak);
-   goldc.innerHTML=(gol/ 28.34) +"Rs";
-   silverc.innerHTML=(sil/ 28.34) +"Rs";
+   goldc.innerHTML=(gol/ 28.34)*10 +" Rs/10gm";
+   silverc.innerHTML=(sil/ 28.34)*1000 +" Rs/Kg";
    goldp.innerHTML=goldprice+"Rs";
    silverp.innerHTML=silverprice+"Rs";
    propertyp.innerHTML=propertyprice+"Rs";
