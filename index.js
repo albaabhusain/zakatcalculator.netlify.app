@@ -17,7 +17,7 @@ var gol;
 var sil;
 
 
-const api=`https://metals-api.com/api/latest?access_key=940hgx18ks81m71o73m1vcmcf2i0cv7txl95b1b4kyqhym1vpdc7lond9uy2&base=INR&symbols=XAU%2CXAG`;
+// const api=`https://metals-api.com/api/latest?access_key=c209h3jchq63sb0nrfk98e35o612g10pm75x5o46qz0ca6b9pgg708uol9gl&base=INR&symbols=XAU%2CXAG`;
 
 fetch(api)
     .then(response =>{
@@ -51,11 +51,12 @@ fetch(api)
 
   
    //  results.value=totalzak;
+
    console.log(goldprice);
    console.log(silverprice);
    console.log(totalzak);
-   goldc.innerHTML=gol+"Rs";
-   silverc.innerHTML=sil+"Rs";
+   goldc.innerHTML=(gol/ 28.34) +"Rs";
+   silverc.innerHTML=(sil/ 28.34) +"Rs";
    goldp.innerHTML=goldprice+"Rs";
    silverp.innerHTML=silverprice+"Rs";
    propertyp.innerHTML=propertyprice+"Rs";
