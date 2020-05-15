@@ -66,7 +66,7 @@
      {
             color: white;
             border: none;
-            background: rgb(65, 158, 65);
+            background: #61942E;
             border-radius: 22px;
             width: 200px;
             height: 50px;
@@ -84,12 +84,21 @@
          font-size: 22px;
          
          display: flex;
-         height: 26em;
+         height: 38em;
          width: 90%;
          margin: 30px 5%;
          background: rgb(233, 229, 229);
          box-shadow: -3px -3px 4px rgba(255, 255, 255, 0.575), 3px 3px 4px rgba(0, 0, 0, 0.25);
          border-radius: 22px;
+     }
+     li{
+         border:2px solid rgba(15, 15, 15, 0.596);
+         margin: 10px 0px;
+         padding:8px;
+     }
+     #tot{
+         border: 2px dashed black;
+         padding: 10px;
      }
      .content-out{
         padding: 30px;
@@ -102,11 +111,7 @@
          
         padding: 10px;
      }
-    hr{
-        width: 90%;
-        background:rgb(70, 117, 81);
-        box-shadow: none;
-    }
+    
     .parent2{
         font-size: 22px;
         
@@ -131,7 +136,7 @@
         border-radius: 25px;
         width: 90%;
         font-size: 26px;
-        height: 24em;
+        height: 26em;
         margin: 10px 5%;
        
     }
@@ -157,7 +162,7 @@
         margin: 10px 3%;
     }
     .footerr{
-        padding: 20px;
+        padding: 20px ;
         margin-left: 20px;
     }
 }

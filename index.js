@@ -50,18 +50,18 @@ fetch(api)
     const totalzak=goldprice+silverprice+propertyprice+savingsprice;
 
   
-    results.value=totalzak;
+    results.value=Math.floor(totalzak);
 
    console.log(goldprice);
    console.log(silverprice);
    console.log(totalzak);
-   goldc.innerHTML=(gol/ 28.34)*10 +" Rs/10gm";
-   silverc.innerHTML=(sil/ 28.34)*1000 +" Rs/Kg";
-   goldp.innerHTML=goldprice+"Rs";
-   silverp.innerHTML=silverprice+"Rs";
-   propertyp.innerHTML=propertyprice+"Rs";
-   savingp.innerHTML=savingsprice+"Rs";
-    out.innerHTML=totalzak +" Rs ";
+   goldc.innerHTML=Math.floor((gol/ 28.34)*10) +" Rs/10gm";
+   silverc.innerHTML=Math.floor((sil/ 28.34)*1000) +" Rs/Kg";
+   goldp.innerHTML=Math.floor(goldprice)+" Rs";
+   silverp.innerHTML=Math.floor(silverprice)+" Rs";
+   propertyp.innerHTML=Math.floor(propertyprice)+" Rs";
+   savingp.innerHTML=Math.floor(savingsprice)+" Rs";
+    out.innerHTML=Math.floor(totalzak) +" Rs ";
     myform.reset();
 
  };
